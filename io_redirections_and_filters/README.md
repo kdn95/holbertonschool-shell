@@ -1,1 +1,24 @@
 added io_redirections_and_filters
+#0-hello_world = echo "Hello World"
+#1-confused_smiley = echo '"((ctrl+x+8+ent+UD4)o)'\'
+#2-hellofile = cat /etc/passwd 
+#3-twofiles = cat /etc/passwd /etc/hosts (display contents of both files)
+#4-lastline = tail etc/passwd (display last 10 lines of file)
+#5-firstline = head ""
+#6-thirdline = head -n 3 iacta | tail -n 1 (display 3rd line of file)
+#7-file = (WIP*) (creates a file named exactly \*\\'"Best School"\'\\*$\?\*\*\*\*\*:) containing the text Best School)
+#8-cwd_state = ls -la > ls_cwd_content (A script that writes into the file ls_cwd_content the result of the command ls -la)
+#9-duplicate = tail -n 1 iacta (A script that duplicates the last line of the file iacta)
+#10-no_more = find . -type f (reg.file) -name "*.js" -delete (a script that deletes all the regular files (not the directories) with a .js extension that are present in the current directory and all its subfolders.)
+#11-directories = find -type d ! -path . | wc -l (a script that counts the number of directories and sub-directories in the current directory.)
+#12-newest_files = ls -1t | head -10 (a script that displays the 10 newest files in the current directory)
+#13-unique = cat list | sort -f | uniq -u (a script that takes a list of words as input and prints only words that appear exactly once.)
+#14-findthatword = grep root* /etc/passwd (Display lines containing the pattern “root” from the file /etc/passwd)
+#15-countthatword = grep -c bin* /etc/passwd (Display the number of lines that contain the pattern “bin” in the file /etc/passwd)
+#16-whatsnext = grep -A 3 root* /etc/passwd (Display lines containing the pattern “root” and 3 lines after them in the file /etc/passwd.)
+#17-hidethisword = grep -v bin* /etc/passwd (Display all the lines in the file /etc/passwd that do not contain the pattern “bin”.)
+#18-letteronly = grep ^[A-Za-z] /etc/passwd (Display all lines of the file /etc/ssh/sshd_config starting with a letter.)
+#19-AZ = tr 'Ac' 'Ze' (Replace all characters A and c from input to Z and e respectively.)
+#20-hiago = tr -d 'Cc' (Create a script that removes all letters c and C from input.)
+#21-reverse = rev (Write a script that reverse its input.)
+#22-user_and__homes = cut -d: -f1,6 /etc/passwd | sort -t: -k1 (Write a script that displays all users and their home directories, sorted by users.)
